@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Real Estate Agent</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        .font-playfair { font-family: 'Playfair Display', serif; }
+        .font-inter { font-family: 'Inter', sans-serif; }
+        .gradient-gold { background: linear-gradient(135deg, #D4AF37 0%, #FFD700 50%, #B8860B 100%); }
+        .text-gold { color: #D4AF37; }
+        .border-gold { border-color: #D4AF37; }
+        .hero-pattern {
+            background-image: 
+                radial-gradient(circle at 25% 25%, rgba(212, 175, 55, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 75% 75%, rgba(212, 175, 55, 0.05) 0%, transparent 50%);
+        }
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .hover-lift {
+            transition: all 0.3s ease;
+        }
+        .hover-lift:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="font-inter bg-gray-50">
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-effect">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="font-playfair text-2xl font-bold text-gray-900">
+                    <span class="text-gold">Elite</span> Realty
+                </div>
+                <!-- <div class="hidden md:flex space-x-8">
+                    <a href="#services" class="text-gray-700 hover:text-gold transition-colors">Services</a>
+                    <a href="#listings" class="text-gray-700 hover:text-gold transition-colors">Listings</a>
+                    <a href="#contact" class="text-gray-700 hover:text-gold transition-colors">Contact</a>
+                </div> -->
+                <button class="gradient-gold text-white px-6 py-2 rounded-full font-medium hover:opacity-90 transition-opacity">
+                    Schedule Consultation
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen hero-pattern flex items-center pt-10 sm:pt-5">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 py-20">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <!-- Agent Photo Placeholder -->
+                <div class="order-2 lg:order-1">
+                    <div class="relative">
+                        <div class="w-80 h-96 mx-auto lg:mx-12 bg-gradient-to-br from-gray-200 to-gray-300 rounded-2xl shadow-2xl flex items-center justify-center relative overflow-hidden">
+                            <!-- Elegant placeholder design -->
+                            <div class="absolute inset-0 bg-gradient-to-br from-gray-100 to-gray-200"></div>
+                            <div class="relative z-10 text-center">
+                                <div class="w-56 h-56 mx-auto mb-4 rounded-full bg-white shadow-lg flex items-center justify-center">
+                                    <img src="portrait.png" alt="Agent Photo" class="w-56 h-56 rounded-full object-cover">
+                                </div>
+                                <p class="text-gray-500 font-medium">Your Name</p>
+                            </div>
+                        </div>
+                        <!-- Decorative elements -->
+                        <div class="absolute -top-4 -right-4 w-20 h-20 gradient-gold rounded-full opacity-20"></div>
+                        <div class="absolute -bottom-6 -left-6 w-16 h-16 bg-gray-300 rounded-full opacity-30"></div>
+                    </div>
+                </div>
+
+                <!-- Introduction Text -->
+                <div class="order-1 lg:order-2 text-center lg:text-left">
+                    <div class="inline-block px-4 py-2 bg-white rounded-full shadow-sm mb-6">
+                        <span class="text-gold font-medium text-sm">🏆 Top 1% Agent</span>
+                    </div>
+                    
+                    <h1 class="font-playfair text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+                        Your Luxury Real Estate
+                        <span class="text-gold block">Expert</span>
+                    </h1>
+                    
+                    <p class="text-xl text-gray-600 mb-8 leading-relaxed max-w-2xl">
+                        With over a decade of experience in luxury real estate, I specialize in connecting discerning clients with exceptional properties. From penthouse suites to waterfront estates, I deliver unparalleled service and results.
+                    </p>
+                    
+                    <div class="grid grid-cols-3 gap-8 mb-10">
+                        <div class="text-center">
+                            <div class="font-playfair text-3xl font-bold text-gray-900">$2.5B+</div>
+                            <div class="text-gray-600 text-sm">Sales Volume</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="font-playfair text-3xl font-bold text-gray-900">500+</div>
+                            <div class="text-gray-600 text-sm">Homes Sold</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="font-playfair text-3xl font-bold text-gray-900">98%</div>
+                            <div class="text-gray-600 text-sm">Client Satisfaction</div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <button class="gradient-gold text-white px-8 py-4 rounded-full font-semibold hover:opacity-90 transition-all hover-lift">
+                            View My Listings
+                        </button>
+                        <button class="border-2 border-gold text-gold px-8 py-4 rounded-full font-semibold hover:bg-gold hover:text-white transition-all hover-lift">
+                            Download Portfolio
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Preview -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-playfair text-4xl font-bold text-gray-900 mb-4">Exceptional Service</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Tailored solutions for luxury real estate needs</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center p-8 rounded-2xl hover-lift bg-gray-50">
+                    <div class="w-16 h-16 gradient-gold rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 21v-4m0 0V5a2 2 0 012-2h6.5l1 1H21l-3 6 3 6h-8.5l-1-1H5a2 2 0 00-2 2zm9-13.5V9"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-playfair text-2xl font-semibold mb-4">Luxury Listings</h3>
+                    <p class="text-gray-600">Exclusive access to premium properties and off-market opportunities</p>
+                </div>
+                
+                <div class="text-center p-8 rounded-2xl hover-lift bg-gray-50">
+                    <div class="w-16 h-16 gradient-gold rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-playfair text-2xl font-semibold mb-4">VIP Service</h3>
+                    <p class="text-gray-600">Personalized attention and white-glove service throughout your journey</p>
+                </div>
+                
+                <div class="text-center p-8 rounded-2xl hover-lift bg-gray-50">
+                    <div class="w-16 h-16 gradient-gold rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v4a2 2 0 01-2 2h-2a2 2 0 00-2 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-playfair text-2xl font-semibold mb-4">Market Expertise</h3>
+                    <p class="text-gray-600">Deep market knowledge and strategic pricing for optimal results</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact CTA -->
+    <section class="py-20 hero-pattern">
+        <div class="max-w-4xl mx-auto text-center px-6 lg:px-8">
+            <h2 class="font-playfair text-4xl font-bold text-gray-900 mb-6">Ready to Find Your Dream Home?</h2>
+            <p class="text-xl text-gray-600 mb-10">Let's discuss your real estate goals and create a personalized strategy</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button class="gradient-gold text-white px-10 py-4 rounded-full font-semibold hover:opacity-90 transition-all hover-lift">
+                    Schedule Private Consultation
+                </button>
+                <button class="border-2 border-gold text-gold px-10 py-4 rounded-full font-semibold hover:bg-gold hover:text-white transition-all hover-lift">
+                    Call (555) 123-4567
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add scroll effect to navigation
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 100) {
+                nav.style.background = 'rgba(255, 255, 255, 0.98)';
+            } else {
+                nav.style.background = 'rgba(255, 255, 255, 0.95)';
+            }
+        });
+
+        // Button click handlers
+        document.querySelectorAll('button').forEach(button => {
+            button.addEventListener('click', function() {
+                // Add a subtle click animation
+                this.style.transform = 'scale(0.98)';
+                setTimeout(() => {
+                    this.style.transform = '';
+                }, 150);
+            });
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'97fbebcb34efd930',t:'MTc1Nzk3OTEyMi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
